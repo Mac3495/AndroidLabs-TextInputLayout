@@ -1,11 +1,8 @@
-package com.herprogramacion.cursospoint;
+﻿package com.herprogramacion.cursospoint;
 
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Creado por Hermosa Programación.
- */
 public class Courses {
     private static Course[] courses = {
             new Course("Toolbar en Android",
