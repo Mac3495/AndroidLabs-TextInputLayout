@@ -12,50 +12,50 @@ public class Courses {
                     "Aprende todo los referido al Toolbar en una aplicación" +
                             "Todos los usos que se pueden dar al Toolbar y las nuevas opciones que trae\n" +
                             "\n" +
-                            "Android Lab 05 \n" +
-                            "120 minutos de aprendizaje", "Marcelo Torrez",
+                            "Marcelo Torrez \n" +
+                            "120 minutos de aprendizaje", "Android Lab 05",
                     3f, 4340, R.drawable.img1),
             new Course("Tab Layouts en Android",
                     "Quieres que tu aplicación tenga ventanas como Facebook y Whatsapp?" +
                             " el uso de la Tablas o Tab layouts es lo indicado para ti!.\n" +
                             "\n" +
-                            "Android Lab 06\n" +
+                            "Remmy Calamani\n" +
                             "\n" +
-                            "120 minutos de aprendizaje\n", "Remmy Calamani",
+                            "120 minutos de aprendizaje\n", "Android Lab 06",
                     5f, 220, R.drawable.img2),
             new Course("Navigation Drawer en Android",
                     "En este Lab se vio que es el NavigationDrawer, su implementación y uso en un app" +
                             "junto con el manejo de fragmentos.\n" +
                             "\n" +
-                            "Android Lab 07\n" +
+                            "Marcelo Torrez\n" +
                             "\n" +
-                            "120 minutos de aprendizaje", "Marcelo Torrez",
+                            "120 minutos de aprendizaje", "Android Lab 07",
                     4.4f, 34235, R.drawable.img3),
             new Course("RecyclerViews y CardViews en Android",
                     "Con estos componentes puedes desarrollar cualquier aplicación y que se vea excelente! " +
                             "Los RecyclerViews y CardViews son una conbinacion poderosa " +
                             "con la que podras tener una UI muy bonita.\n" +
                             "\n" +
-                            "Android Lab 08\n" +
+                            "Remmy Calamani\n" +
                             "\n" +
-                            "120 minutos de aprendizaje\n", "Remmy Calamani",
+                            "120 minutos de aprendizaje\n", "Android Lab 08",
                     3.4f, 11245, R.drawable.img4),
             new Course("Textos flotantes y Transiciones",
                     "Aprende a crear entradas de extos con estilos Materail Design " +
                             "y las animaciones entre actividades.\n" +
                             "\n" +
-                            "Android Lab 09\n" +
+                            "Marcelo Torrez\n" +
                             "\n" +
-                            "120 minutos de aprendizaje", "Marcelo Torrez",
+                            "120 minutos de aprendizaje", "Android Lab 09",
                     4.0f, 122, R.drawable.img5),
             new Course("Floating Action Buton",
                     "Quieres saber todo lo relacionado a los FABs? en este Lab veras todo lo que se  " +
                             "puede rrealizar con la ayuda de estos bonitos botones! " +
                             "note pierdas del ultimo Lab del curso!.\n" +
-                            "\n" +
-                            "Nuevos cursos estan por llegar! y estas invitado!.\n" +
+                            "\nNuevos cursos estan por llegar! y estas invitado!\n" +
+                            "Remmy Calamani.\n" +
                             "120 minutos de aprendizaje",
-                    "Remmy Calamani", 3.2f, 2503, R.drawable.img6),
+                    "Android Lab 10", 3.2f, 2503, R.drawable.img6),
     };
 
     /**

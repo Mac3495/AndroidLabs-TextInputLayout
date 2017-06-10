@@ -25,8 +25,6 @@ public class CourseActivity extends AppCompatActivity {
 
         setupRecyclerView(); // Preparar recycler view
 
-        setupWindowAnimations(); // Añadir animaciones
-
     }
 
     private void setupRecyclerView() {
@@ -40,12 +38,6 @@ public class CourseActivity extends AppCompatActivity {
     private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-    }
-
-    private void setupWindowAnimations() {
-        getWindow().setEnterTransition(new Explode());
-        getWindow().setReenterTransition(new Explode());
-        getWindow().setExitTransition(new Explode().setDuration(500));
     }
 
 }

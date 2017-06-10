@@ -44,73 +44,7 @@ public class DetailActivity extends AppCompatActivity {
 
         Window window = getWindow();
 
-        // Elegir transiciones
-        switch (position) {
-            // EXPLODE
-            case 0:
-                Explode t0 = new Explode();
-                window.setEnterTransition(t0);
-                break;
-            // SLIDE
-            case 1:
-                Slide t1 = new Slide();
-                t1.setSlideEdge(Gravity.END);
-                window.setEnterTransition(t1);
-                break;
-            // FADE
-            case 2:
-                Fade t2 = new Fade();
-                window.setEnterTransition(t2);
-                break;
-            // PERSONALIZADA
-            case 3:
-                Transition t3 = TransitionInflater.from(this)
-                        .inflateTransition(R.transition.detail_enter_trasition);
-                window.setEnterTransition(t3);
-                break;
-            // EVENTOS DE TRANSICIÓN
-            case 4:
-                Fade t4 = new Fade();
-                t4.addListener(
-                        new Transition.TransitionListener() {
-                            @Override
-                            public void onTransitionStart(Transition transition) {
 
-                            }
-
-                            @Override
-                            public void onTransitionEnd(Transition transition) {
-                                Snackbar.make(
-                                        findViewById(R.id.coordinator),
-                                        "Terminó la transición",
-                                        Snackbar.LENGTH_SHORT)
-                                        .show();
-                            }
-
-                            @Override
-                            public void onTransitionCancel(Transition transition) {
-
-                            }
-
-                            @Override
-                            public void onTransitionPause(Transition transition) {
-
-                            }
-
-                            @Override
-                            public void onTransitionResume(Transition transition) {
-
-                            }
-                        }
-                );
-                window.setEnterTransition(t4);
-                break;
-            // POR DEFECTO
-            case 5:
-                window.setEnterTransition(null);
-                break;
-
-        }
     }
 
     private void setupViews(int position) {
@@ -125,7 +59,7 @@ public class DetailActivity extends AppCompatActivity {
 
         name.setText(detailCourse.getName());
         description.setText(detailCourse.getDescription());
-        author.setText("Dictado Por: " + detailCourse.getAuthor());
+        author.setText(detailCourse.getAuthor());
         rating.setRating(detailCourse.getRating());
 
         switch (position){
@@ -168,14 +102,8 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = new Intent(context, DetailActivity.class);
         intent.putExtra(EXTRA_POSITION, position);
 
-        // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 3) {
-            ActivityOptions options0 = ActivityOptions
-                    .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
-            context.startActivity(intent, options0.toBundle());
-        } else {
-            ActivityOptions options0 = ActivityOptions.makeSceneTransitionAnimation(context);
-            context.startActivity(intent, options0.toBundle());
-        }
+        context.startActivity(intent);
+
+
     }
 }
